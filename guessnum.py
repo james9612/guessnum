@@ -1,5 +1,9 @@
 import random
-r = random.randint(1,100)
+start = input('請隨機輸入範圍起始數')
+end = input('請隨機輸入範圍最終數')
+start = int(start)
+end = int(end)
+r = random.randint(start,end)
 while True:
     ans = input('請猜數字:')
     ans = int(ans)
@@ -10,5 +14,3 @@ while True:
         print('比答案大')
     elif ans < r:
         print('比答案小')
-
-
